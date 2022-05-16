@@ -1,0 +1,321 @@
+Etiquetas html
+Para escribir texto de diferentes tamaños
+=========================================
+<h1>Imágenes y Efectos</h1>
+<p>Diferentes imágenes: de fondo, centradas, cuadrícula y por supuesto efectos de transición </p>
+<br> salto de página
+Partes de la Pagina Web
+========================
+<html>
+	<head>
+	</head>
+	<body>
+		<header>
+		<div>
+			<img src="imagenes/Infodec.png" width="70" alt="Logotipo Compañía">
+			<nav>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Categoria1</a></li>
+					<li><a href="#">Categoria2</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+		<section class="wrapper">
+			<section class="main"></section>
+			<article>
+				<h2>Titulo de nuestra página</h2>
+				<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Consequuntur est expedita laboriosam, id! Aliquam unde, sapiente magnam dignissimos. Magni, repellendus harum accusantium quasi, ab est suscipit voluptatem minima impedit consectetur.</p>
+			</article>
+			<article>
+				<h2>Titulo de nuestra página</h2>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Temporibus dolor, officia exercitationem expedita, optio labore et possimus? Natus odio nostrum optio fuga eveniet similique expedita dignissimos nam, harum amet, id!
+				</p>
+			</article>
+			<aside>
+				<h3>Sidebar</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere amet recusandae ipsam culpa autem! Nihil repellat, error distinctio consectetur voluptate veniam quibusdam quidem dolores architecto excepturi magni doloribus, hic vitae.
+				</p>
+			</aside>			
+		</section>
+		<footer>
+		<p>
+		</p>
+		</footer>
+	</body>	
+</html>
+===========================
+Para crear enlaces
+=====================
+<a target="_black" href="https://www.google.com/"> Ir a google</a><br/>
+
+<a target="_black" href="imagenes/infodec.png"> Ir a Infodec</a>
+
+
+Para insertar una imagen
+===========================
+<img src="imagenes/infodec.png" alt="Imagen no se carga"> 
+
+Para crear listas
+===========================
+<ul>
+			<li><a href="#">Item #1</a></li>
+			<li>Item #2</li>
+			<li>Item #3</li>
+			<li>Item #4</li>
+			<li>Item #5</li>
+
+
+		</ul>
+		<ol>
+			<li><a href="#">Item #1</a></li>
+			<li>Item #2</li>
+			<li>Item #3</li>
+			<li>Item #4</li>
+			<li>Item #5</li>
+
+
+		</ol>
+
+Para crear tablas
+=============================
+	<h1>Jugando con Tablas </h1>
+		<table>
+	<caption> Consultores Infodec </caption>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Urlandy</td>
+    <td>Ibarra</td>
+    <td>46</td>
+  </tr>
+  <tr>
+    <td>Hector</td>
+    <td>Rodriguez</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Alejandra</td>
+    <td>Rodriguez</td>
+    <td>35</td>
+  </tr>
+</table>
+Responsive
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+=========
+CSS Creando Tablas
+h1{text-align:center;
+}
+table{
+	margin-top:50px;
+	caption-side: bottom;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse:collapse;
+}
+th{
+	background-color: black;
+	color: white;
+	
+}
+caption{
+padding-top: 20px;
+font-style: italic;
+}
+td{
+	border: 2px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+}
+
+Creando Formularios
+=====================
+<form>
+		<label for="nombre">Ingrese su nombre<label/>
+		<input type="text" placeholder="Escribe tu nombre" maxleght="50" name="nombre" id="nombre"><br><br>
+		<label for="email">Ingrese su correo Electrónico<label/> 
+		<input type="email" placeholder="Ingrese su correo" maxleght="50" name="emai" id="email"><br><br>
+		<label for="password">Ingrese su contraseña<label/> 
+		<input type="password" placeholder="Ingrese su contraseña" maxleght="50" name="password" id="password"><br><br>
+		<label for="date">Ingrese su fecha de nacimiento<label/> 
+		<input type="date" placeholder="Ingrese su fecha de nacimiento"  name="date" id="date"><br><br>
+		<label for="time">Ingrese su contraseña<label/> 
+		<input type="time" placeholder="Ingrese su contraseña"  name="time" id="password"><br><br>
+		<label for="number">Ingrese su cédula<label/> 
+		<input type="number" placeholder="Ingrese su cédula"  name="number" id="number"><br><br>
+		<label>Sexo : </label><br>
+		<input type="radio" name="sexo">Masculino</br>
+		<input type="radio" name="sexo">Femenino</br>
+		<label>Nivel de estudio : </label><br>
+		<input type="checkbox" >No tiene estudio</br>
+		<input type="checkbox" >Técnico</br>
+		<input type="checkbox" >Universitario</br>
+		<label>Paises: </label></br>
+		<select name="" id="">
+				<option value="">Colombia</option>
+				<option value="">Peru</option>
+				<option value="">Mexico</option>
+		</select>
+</br></br>
+		<label>Color: </label></br>
+		<input type="Color"></br>
+
+		<label >Archivo:</label></br>
+		<input type="file">
+		<label>Limpiar</label></br>
+		<input type="reset"></br>
+		<input type="submit" >
+
+
+</form>
+formulario de seleccion
+=========================
+<select name"" id="">
+	<option value="Mexico">Mexico</option>
+	<option value="Colombia">Colombia</option>
+</select>
+<!--Para usar Javascrip-->
+	<h2>Use JavaScript to Change Text</h2>
+	<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+	<p id="demo"></p>
+	<script>
+		document.getElementById("demo").innerHTML = "Hello JavaScript!";
+	</script>
+	<h1>Mi primer JavaScript</h1>
+	<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<!-- Para manejar botones -->
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+</script>
+Etiqueta con html
+==================
+<cite>  </cite>
+<b>  </b>
+<strong> </strong> 
+<i>  </i>
+<blockquote> </blockquote> pone el parrafo en bloque
+<hr/> linea separadora
+Para darle  estilo a las etiquetas
+===================
+
+<body style="background-color:powderblue;"> le da el fondo azul claro a la pantalla
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+le da color a las palabras
+==========================
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+Centra las palabras
+=========================
+ <h1 style="text-align:center;">Centered Heading</h1>
+
+<p style="text-align:center;">Centered paragraph.</p> 
+
+Tamaño de las palabras
+======================
+ <h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p> 
+
+Tipo de letra
+=============
+
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+Seleccionar un color favorito y sobrayar el favorito
+================================================
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+Escribe una frase entre comillas
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p> 
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> 
+
+Parrafo en cursiva
+ <address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address> 
+
+
+Colores
+===========
+Tomato
+Orange
+DodgeBlue
+MediumSeaGreen
+Gray
+SlateBlue
+Violet
+LightGray
+
+codigo responsive
+@media screen and (max_width: 768px){
+.contenedor contenido{
+gird_column: 1 /-1;
+}
+}
+
+@media screen and (max-width: 800px){
+ 	.main {
+ 		width:100%;	
+ 	}
+ 	aside {
+ 		width:100%;
+ 	}
+ }
+ @media screen and (max-width: 400px){
+ 	.contenedor {
+ 		width:100%;
+
+ 	}
+ 	aside {
+ 		display:none;
+ 	}
+
+ }
+
+<iframe src="pagina_fuente.html" width=290 height=250>Texto para cuando el navegador no conoce la etiqueta iframe</iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
